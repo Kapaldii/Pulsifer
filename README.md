@@ -5,7 +5,7 @@ Bem-vindo ao repositório oficial do projeto **Pulsifer**, desenvolvido pela squ
 Este projeto é um Sistema Integrado de IoT e Web focado em segurança e monitoramento de saúde, construído como requisito acadêmico para o 1º semestre do curso de Análise e Desenvolvimento de Sistemas (ADS) da Universidade 9 de Julho.
 
 ## 🎯 O que é o Pulsifer?
-O Pulsifer é o produto de uma empresa fictícia de soluções tecnológicas focada na proteção feminina. Consiste em um dispositivo *wearable* (relógio/pulseira inteligente) discreto e eficiente, equipado com:
+O Pulsifer é o produto de uma empresa fictícia de soluções tecnológicas focada na proteção feminina e monitoramento de saude. Consiste em um dispositivo *wearable* (relógio/pulseira inteligente) discreto e eficiente, equipado com:
 * **Monitoramento de Saúde:** Sensores de batimentos cardíacos em tempo real.
 * **Segurança Integrada:** Botão de pânico (SOS) discreto para envio de alertas imediatos.
 * **Geolocalização (GPS):** Rastreamento preciso integrado com a rede de apoio da usuária.
