@@ -1,0 +1,97 @@
+<!-- P�gina de modelos da Pulsifer - Exibe diferentes dispositivos IoT com troca interativa --><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore os modelos Pulsifer e escolha o dispositivo ideal para seu estilo de vida.">
+  <meta property="og:title" content="Pulsifer · Modelos" />
+  <meta property="og:description" content="Explore os modelos Pulsifer e escolha o dispositivo ideal para seu estilo de vida." />
+  <meta property="og:image" content="Assets/placeholder-share-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/modelos.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pulsifer · Modelos" />
+  <meta name="twitter:description" content="Explore os modelos Pulsifer e escolha o dispositivo ideal para seu estilo de vida." />
+  <meta name="twitter:image" content="Assets/placeholder-share-image.jpg" />
+  <!-- Substitua Assets/placeholder-share-image.jpg pela imagem de compartilhamento posterior -->
+  <title>Pulsifer · Modelos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/modelos.css" />
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <nav>
+    <div class="logo"><a href="index.html">Pulsi<span>fer</span></a></div>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="modelos.html">Modelos</a></li>
+      <li><a href="Contato.html">Contato</a></li>
+      <li><a href="equipe.html">Quem Somos</a></li>
+    </ul>
+  </nav>
+
+  <!-- TÍTULO -->
+  <div class="secao-titulo">
+    <h2>Escolha o seu modelo</h2>
+    <p>Tecnologia de monitoramento feita para cada fase da vida</p>
+  </div>
+
+  <!-- BOTÕES FIXOS NO HTML -->
+  <div class="botoes">
+    <button id="btn-one"  onclick="trocarModelo('one')"  class="ativo" style="background:#555555;">Pulsifer One</button>
+    <button id="btn-plus" onclick="trocarModelo('plus')">Pulsifer Plus</button>
+    <button id="btn-kids" onclick="trocarModelo('kids')">Pulsifer Kids</button>
+  </div>
+
+  <!-- ÁREA DO MODELO -->
+  <div class="modelo-area">
+
+    <!-- Visual SVG da pulseira -->
+    <div class="modelo-visual" id="modeloVisual">
+      <!-- SVG trocado via JS -->
+    </div>
+
+    <!-- Informações -->
+    <div class="modelo-info">
+      <div class="modelo-tag"     id="modeloTag">Para Idosos</div>
+      <div class="modelo-nome"    id="modeloNome">Pulsifer One</div>
+      <div class="separador"></div>
+      <p class="modelo-descricao" id="modeloDescricao">
+        Segurança e tranquilidade para quem você ama. Monitoramento contínuo com alertas instantâneos para familiares.
+      </p>
+
+      <div class="funcionalidades">
+        <div class="func-item">
+          <span class="func-icone" id="icone1">🆘</span>
+          <div class="func-texto">
+            <strong id="titulo1">Botão SOS</strong>
+            <span   id="desc1">Acionamento de emergência com um toque</span>
+          </div>
+        </div>
+        <div class="func-item">
+          <span class="func-icone" id="icone2">❤️</span>
+          <div class="func-texto">
+            <strong id="titulo2">Monitor Cardíaco</strong>
+            <span   id="desc2">Frequência cardíaca medida em tempo real</span>
+          </div>
+        </div>
+        <div class="func-item">
+          <span class="func-icone" id="icone3">🌡️</span>
+          <div class="func-texto">
+            <strong id="titulo3">Temperatura Corporal</strong>
+            <span   id="desc3">Detecta febre e variações térmicas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /modelo-area -->
+  <footer>
+    <strong>Pulsifer · SyncPulse</strong> — Estilo e segurança em um só produto.<br>
+    © 2025 · ADS 1º Semestre
+  </footer>
+
+  <script src="JS/modelos.js"></script>
+</body>
+</html>

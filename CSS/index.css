@@ -1,0 +1,230 @@
+/* =============================================
+   ARQUIVO CSS PARA A PÁGINA INDEX.HTML
+   Estilos para a landing page da Pulsifer com hero, features e footer
+============================================= *//* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url('../Assets/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* NAV */
+nav {
+    background: #ffffff;
+    border-bottom: 2px solid #3a7eff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo { font-size: 1.4rem; font-weight: bold; color: #1a4bbd;}
+.logo a {text-decoration: none;}
+.logo span { color: #3a7eff; }
+
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav ul li { font-size: .9rem; }
+nav ul li a {
+    color: #0a1f5c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+nav ul li a:hover { color: #3a7eff; }
+
+/* HERO */
+.hero-principal {
+    position: relative;
+    min-height: 520px;
+    padding: 80px 0;
+    background-image: linear-gradient(180deg, rgba(4,83,137,0.72) 0%, rgba(4,83,137,0.58) 60%, rgba(4,83,137,0.18) 100%),
+      url('../Assets/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-principal::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.18) 40%, rgba(0,0,0,0.4) 100%);
+}
+
+.hero-principal .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    color: #fff;
+    text-align: left;
+}
+
+.hero-badge {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.18);
+    color: #e5f2ff;
+    font-size: 0.82rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.hero-principal h1 {
+    font-size: clamp(2.8rem, 4vw, 4.4rem);
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
+
+.hero-principal p {
+    max-width: 540px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 28px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #ffd800;
+    color: #0a1f5c;
+    padding: 14px 28px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+.hero-img {
+    width: 100%;
+    max-width: none;
+    display: block;
+    border-radius: 0;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center; /* centraliza os cards */
+    gap: 35px;
+    margin: 50px auto;
+}
+
+.feature-card {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.feature-card i {
+    color: #045389;
+    margin-bottom: 15px;
+}
+
+/* FLEX */
+.flex-box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.flex-img {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.flex-texto {
+    width: 50%;
+}
+
+.flex-texto h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.flex-texto p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    background: #0a1f5c;
+    color: rgba(255,255,255,.6);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: .82rem;
+    margin-top: 2rem;
+}
+footer strong { color: #fff; }
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .flex-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex-img,
+    .flex-texto {
+        width: 100%;
+    }
+
+    .feature-card {
+        flex: 1 1 100%;
+    }
+}
+
+.conteudo-extra {
+    display: none;
+    margin-top: 10px;
+}
+
+.feature-card.ativo .conteudo-extra {
+    display: block;
+}

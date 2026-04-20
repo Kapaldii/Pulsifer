@@ -1,0 +1,145 @@
+/* =============================================
+   ARQUIVO CSS PARA A PÁGINA EQUIPE.HTML
+   Este arquivo contém todos os estilos para a página "Quem Somos"
+   da Pulsifer, incluindo navegação, hero, seções sobre, equipe e footer.
+============================================= */
+
+/* =============================================
+   RESET - Zera margens e paddings padrão do navegador
+============================================= *//* =============================================
+   RESET
+============================================= */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f0f5ff;
+  color: #0a1f5c;
+}
+
+/* =============================================
+   NAV
+============================================= */
+nav {
+  background: #ffffff;
+  border-bottom: 2px solid #3a7eff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo { font-size: 1.4rem; font-weight: bold; color: #1a4bbd; }
+.logo a { text-decoration: none; color: inherit; }
+.logo span { color: #3a7eff; }
+
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav ul li { font-size: .9rem; }
+nav ul li a {
+  color: #0a1f5c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+nav ul li a:hover { color: #3a7eff; }
+
+/* =============================================
+   HERO
+============================================= */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: #ffffff;
+}
+.hero h1 { font-size: 2rem; color: #1a4bbd; margin-bottom: .5rem; }
+.hero p  { color: #4a6090; font-size: .95rem; }
+
+/* =============================================
+   SOBRE
+============================================= */
+.sobre { padding: 2rem; max-width: 800px; margin: 0 auto; text-align: justify; }
+.sobre h2 { font-size: 1.5rem; color: #1a4bbd; margin-bottom: 1.5rem; text-align: center; }
+.sobre p { margin-bottom: 1rem; line-height: 1.6; color: #4a6090; }
+
+/* =============================================
+   EQUIPE
+============================================= */
+.equipe { padding: 2rem; max-width: 900px; margin: 0 auto; }
+.equipe h2 { font-size: 1.3rem; margin-bottom: 1.2rem; color: #1a4bbd; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #c5d8ff;
+  border-radius: 12px;
+  padding: 1.2rem 1rem;
+  text-align: center;
+}
+
+.avatar {
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  background: #1a4bbd;
+  color: #fff;
+  font-size: 1.3rem; font-weight: bold;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto .8rem;
+}
+
+.avatar-img {
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto .8rem;
+}
+
+.card h4 { font-size: .9rem; margin-bottom: .4rem; }
+.card span {
+  background: #e0eaff;
+  color: #1a4bbd;
+  font-size: .72rem;
+  padding: .2rem .6rem;
+  border-radius: 50px;
+}
+
+/* =============================================
+   FAQ
+============================================= */
+.faq { padding: 2rem; max-width: 700px; margin: 0 auto; }
+.faq h2 { font-size: 1.3rem; color: #1a4bbd; margin-bottom: 1rem; }
+
+details {
+  background: #ffffff;
+  border: 1px solid #c5d8ff;
+  border-radius: 10px;
+  margin-bottom: .7rem;
+  padding: 1rem 1.2rem;
+}
+
+summary {
+  font-weight: bold;
+  font-size: .93rem;
+  cursor: pointer;
+  color: #0a1f5c;
+}
+
+details p { margin-top: .7rem; font-size: .88rem; color: #4a6090; line-height: 1.6; }
+
+/* =============================================
+   FOOTER
+============================================= */
+footer {
+  background: #0a1f5c;
+  color: rgba(255,255,255,.6);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: .82rem;
+  margin-top: 2rem;
+}
+footer strong { color: #fff; }
