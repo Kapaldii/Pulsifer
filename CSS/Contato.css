@@ -1,6 +1,6 @@
 /* =============================================
-   ARQUIVO CSS PARA A PÁGINA CONTATO.HTML
-   Estilos para o formulário de contato com campos de entrada e botão
+   ARQUIVO CSS PARA A Pï¿½GINA CONTATO.HTML
+   Estilos para o formulï¿½rio de contato com campos de entrada e botï¿½o
 ============================================= */body {
   font-family: 'Inter', sans-serif;
   background: #ffffff;
@@ -12,33 +12,25 @@
    CABEÃ‡ALHO â€” azul
 ============================================= */
 nav {
-  background: #ffffff;
-  border-bottom: 2px solid #3a7eff;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    background: #ffffff;
+    border-bottom: 2px solid #3a7eff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.logo {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.9rem;
-  font-weight: 500;
-  color: #1a4bbd;
-}
-.logo a {
-  text-decoration: none;
-  color: inherit;
-}
+.logo { font-size: 1.4rem; font-weight: bold; color: #1a4bbd;}
+.logo a {text-decoration: none;}
 .logo span { color: #3a7eff; }
 
 nav ul { list-style: none; display: flex; gap: 1.5rem; }
-nav ul li { font-size: 0.95rem; }
+nav ul li { font-size: .9rem; }
 nav ul li a {
-  color: #0a1f5c;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
+    color: #0a1f5c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 nav ul li a:hover { color: #3a7eff; }
 
