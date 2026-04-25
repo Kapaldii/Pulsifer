@@ -1,5 +1,5 @@
 /* =============================================
-   ARQUIVO CSS PARA A PÁGINA INDEX.HTML
+   ARQUIVO CSS PARA A Pï¿½GINA INDEX.HTML
    Estilos para a landing page da Pulsifer com hero, features e footer
 ============================================= *//* RESET */
 * {
@@ -17,6 +17,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     color: #333;
+    overflow-x: hidden;
 }
 
 .container {
@@ -203,6 +204,17 @@ footer strong { color: #fff; }
     nav {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .hero-principal {
+        min-height: auto;
+        padding: 60px 0;
+        width: 100%;
+    }
+
+    .hero-principal .hero-content {
+        max-width: 100%;
+        padding: 0 1rem;
     }
 
     .flex-box {

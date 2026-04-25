@@ -1,3 +1,6 @@
+/* RESET — igual ao index.css e equipe.css */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
 /* =============================================
    ARQUIVO CSS PARA A P�GINA CONTATO.HTML
    Estilos para o formul�rio de contato com campos de entrada e bot�o
@@ -6,6 +9,7 @@
   background: #ffffff;
   color: #111111;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* =============================================
@@ -17,19 +21,16 @@
 nav {
     background: #ffffff;
     border-bottom: 2px solid #3a7eff;
-    /* Remova o display: flex daqui, o nav agora é só o fundo */
-    padding: 0; 
     width: 100%;
 }
 
-/* Nova classe para centralizar o conteúdo dentro do nav */
+/* Container-nav cuida de todo o layout interno */
 .container-nav {
-    max-width: 600px; /* Alinha perfeitamente com o formulário abaixo */
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0; /* Removi o padding lateral para o alinhamento ser exato */
+    padding: 1rem 2rem;
+    width: 100%;
 }
 
 .logo { font-size: 1.4rem; font-weight: bold; color: #1a4bbd;}
