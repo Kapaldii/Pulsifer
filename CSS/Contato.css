@@ -9,15 +9,27 @@
 }
 
 /* =============================================
-   CABEÇALHO — azul
+   CABEÇALHO — Branco
+============================================= */
+/* =============================================
+   CABEÇALHO — Ajustado
 ============================================= */
 nav {
     background: #ffffff;
     border-bottom: 2px solid #3a7eff;
-    padding: 1rem 2rem;
+    /* Remova o display: flex daqui, o nav agora é só o fundo */
+    padding: 0; 
+    width: 100%;
+}
+
+/* Nova classe para centralizar o conteúdo dentro do nav */
+.container-nav {
+    max-width: 600px; /* Alinha perfeitamente com o formulário abaixo */
+    margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0; /* Removi o padding lateral para o alinhamento ser exato */
 }
 
 .logo { font-size: 1.4rem; font-weight: bold; color: #1a4bbd;}
@@ -100,4 +112,34 @@ footer strong { color: #fff; }
 
 textarea {
   resize: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .flex-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex-img,
+    .flex-texto {
+        width: 100%;
+    }
+
+    .feature-card {
+        flex: 1 1 100%;
+    }
+}
+
+.conteudo-extra {
+    display: none;
+    margin-top: 10px;
+}
+
+.feature-card.ativo .conteudo-extra {
+    display: block;
 }

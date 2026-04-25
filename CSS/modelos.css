@@ -188,7 +188,35 @@ footer {
 }
 footer strong { color: #fff; }
 
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
 
+    .flex-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex-img,
+    .flex-texto {
+        width: 100%;
+    }
+
+    .feature-card {
+        flex: 1 1 100%;
+    }
+}
+
+.conteudo-extra {
+    display: none;
+    margin-top: 10px;
+}
+
+.feature-card.ativo .conteudo-extra {
+    display: block;
+}
 
 
 

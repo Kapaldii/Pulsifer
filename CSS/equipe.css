@@ -1,11 +1,11 @@
 /* =============================================
-   ARQUIVO CSS PARA A PÁGINA EQUIPE.HTML
-   Este arquivo contém todos os estilos para a página "Quem Somos"
-   da Pulsifer, incluindo navegação, hero, seções sobre, equipe e footer.
+   ARQUIVO CSS PARA A Pï¿½GINA EQUIPE.HTML
+   Este arquivo contï¿½m todos os estilos para a pï¿½gina "Quem Somos"
+   da Pulsifer, incluindo navegaï¿½ï¿½o, hero, seï¿½ï¿½es sobre, equipe e footer.
 ============================================= */
 
 /* =============================================
-   RESET - Zera margens e paddings padrão do navegador
+   RESET - Zera margens e paddings padrï¿½o do navegador
 ============================================= *//* =============================================
    RESET
 ============================================= */
@@ -143,3 +143,33 @@ footer {
   margin-top: 2rem;
 }
 footer strong { color: #fff; }
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .flex-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex-img,
+    .flex-texto {
+        width: 100%;
+    }
+
+    .feature-card {
+        flex: 1 1 100%;
+    }
+}
+
+.conteudo-extra {
+    display: none;
+    margin-top: 10px;
+}
+
+.feature-card.ativo .conteudo-extra {
+    display: block;
+}
