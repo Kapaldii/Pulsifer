@@ -1,6 +1,6 @@
 /* =============================================
-   ARQUIVO CSS PARA A Pï¿½GINA MODELOS.HTML
-   Estilos para a exibiï¿½ï¿½o dos modelos de dispositivos IoT com animaï¿½ï¿½es
+   ARQUIVO CSS PARA A PÁGINA MODELOS.HTML
+   Estilos para a exibição dos modelos de dispositivos IoT com animações
 ============================================= *//* =============================================
    RESET
 ============================================= */
@@ -17,25 +17,25 @@ body {
    NAV
 ============================================= */
 nav {
-    background: #ffffff;
-    border-bottom: 2px solid #3a7eff;
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 2px solid #3a7eff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logo { font-size: 1.4rem; font-weight: bold; color: #1a4bbd;}
-.logo a {text-decoration: none;}
+.logo { font-size: 1.4rem; font-weight: bold; color: #1a4bbd; }
+.logo a { text-decoration: none; color: inherit; }
 .logo span { color: #3a7eff; }
 
 nav ul { list-style: none; display: flex; gap: 1.5rem; }
 nav ul li { font-size: .9rem; }
 nav ul li a {
-    color: #0a1f5c;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
+  color: #0a1f5c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
 nav ul li a:hover { color: #3a7eff; }
 
