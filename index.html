@@ -1,126 +1,234 @@
-<!-- P�gina inicial da Pulsifer - Landing page com apresenta��o dos produtos --><!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pulsifer oferece monitoramento 24/7 com proteção inteligente para toda a família.">
-    <meta property="og:title" content="Pulsifer" />
-    <meta property="og:description" content="Monitoramento de saúde e segurança com alertas instantâneos onde você estiver." />
-    <meta property="og:url" content="https://example.com/index.html" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Pulsifer" />
-    <meta name="twitter:description" content="Monitoramento de saúde e segurança com alertas instantâneos onde você estiver." />
-    <meta name="twitter:image" content="https://kapaldii.github.io/Pulsifer/Assets/Pulsifer-share.jpeg" />
-    <!-- Substitua Assets/placeholder-share-image.jpg pela imagem de compartilhamento posterior -->
-    <title>Pulsifer</title>
-    <link rel="icon" href="Assets/pulsifer.ico" type="image/svg+xml">
+<!-- PÁGINA INICIAL DA PULSIFER -->
+<!DOCTYPE html> <!-- Define que o documento usa HTML5 -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<html lang="pt-br"> <!-- Define o idioma do site como português -->
+
+<head>
+
+    <meta charset="UTF-8"> <!-- Permite acentos e caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz o site funcionar corretamente no celular -->
+
+    <meta name="description"
+          content="Pulsifer oferece monitoramento 24/7 com proteção inteligente para toda a família.">
+    <!-- Descrição do site para Google e pesquisas -->
+
+    <meta property="og:title" content="Pulsifer" />
+    <!-- Título exibido ao compartilhar o site -->
+
+    <meta property="og:description"
+          content="Monitoramento de saúde e segurança com alertas instantâneos onde você estiver." />
+    <!-- Descrição exibida ao compartilhar o site -->
+
+    <title>Pulsifer</title> <!-- Nome da aba do navegador -->
+
+    <link rel="icon" href="Assets/pulsifer.ico" type="image/svg+xml">
+    <!-- Ícone da aba do navegador -->
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Biblioteca de ícones -->
+
+    <!-- FONTE -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <!-- Importa a fonte Inter do Google Fonts -->
+
+    <!-- CSS -->
     <link rel="stylesheet" href="CSS/index.css">
+    <!-- Conecta o arquivo CSS do site -->
+
 </head>
 
 <body>
 
-<!-- HEADER -->
+<!-- HEADER / MENU -->
 <nav>
-  <div class="logo"><a href="index.html">Pulsi<span>fer</span></a></div>
-  <ul>
-    <li><a href="index.html">Início</a></li>
-    <li><a href="modelos.html">Modelos</a></li>
-    <li><a href="contato.html">Contato</a></li>
-    <li><a href="equipe.html">Quem Somos</a></li>
-  </ul>
+
+    <div class="logo">
+
+        <a href="index.html">
+            Pulsi<span>fer</span>
+        </a>
+        <!-- Logo do site -->
+
+    </div>
+
+    <ul>
+
+        <li><a href="index.html">Início</a></li>
+        <!-- Link da página inicial -->
+
+        <li><a href="modelos.html">Modelos</a></li>
+        <!-- Link da página de modelos -->
+
+        <li><a href="Contato.html">Contato</a></li>
+        <!-- Link da página de contato -->
+
+        <li><a href="equipe.html">Quem Somos</a></li>
+        <!-- Link da página da equipe -->
+
+    </ul>
+
 </nav>
 
 <!-- HERO PRINCIPAL -->
 <section class="hero-principal" id="inicio">
+    <!-- Primeira seção principal do site -->
+
     <div class="hero-content container">
-        <span class="hero-badge">Monitoramento 24/7</span>
-        <h1>Proteção inteligente para toda a família</h1>
-        <p>Monitoramento de saúde e segurança com alertas instantâneos onde você estiver.</p>
-        <a href="modelos.html" class="hero-button">Veja os modelos</a>
+        <!-- Conteúdo centralizado -->
+
+        <span class="hero-badge">
+            Monitoramento 24/7
+        </span>
+        <!-- Pequeno destaque acima do título -->
+
+        <h1>
+            Proteção inteligente para toda a família
+        </h1>
+        <!-- Título principal -->
+
+        <p>
+            Monitoramento de saúde e segurança com alertas instantâneos
+            onde você estiver.
+        </p>
+        <!-- Texto explicativo -->
+
+        <a href="modelos.html" class="hero-button">
+            Veja os modelos
+        </a>
+        <!-- Botão que leva para os modelos -->
+
     </div>
+
 </section>
 
-<!-- FEATURES -->
+<!-- CARDS -->
 <section class="features container">
-    <div class="feature-card" onclick="toggleCard(this)">
+
+    <!-- CARD 1 -->
+    <div class="feature-card">
+
         <i class="fa-solid fa-calendar-days fa-3x"></i>
+        <!-- Ícone de calendário da biblioteca Font Awesome -->
+
         <h3>Planos personalizados</h3>
-        <p>Escolha o plano ideal para você, adaptado ao seu estilo e rotina.</p>
-        <div class="conteudo-extra">
-            <p>Oferecemos diferentes planos para atender desde quem está começando até quem busca melhorar o desempenho, permitindo que você evolua no seu próprio ritmo.</p>
-        </div>
+        <!-- Título do card -->
+
+        <p>
+            Escolha o plano ideal para você, adaptado ao seu estilo e rotina.
+            Oferecemos diferentes opções para acompanhar sua evolução
+            de forma prática e acessível.
+        </p>
+        <!-- Texto do card -->
+
     </div>
 
+    <!-- CARD 2 -->
+    <div class="feature-card">
 
-
-    <div class="feature-card" onclick="toggleCard(this)">
         <i class="fa-solid fa-heart-pulse fa-3x"></i>
-        <h3>Rastreamento em tempo real</h3>
-        <p>Veja todas as métricas diretamente no app, instantaneamente.</p>
+        <!-- Ícone de coração da biblioteca Font Awesome -->
 
-        <div class="conteudo-extra">
-            <p>Acompanhe dados como batimentos cardíacos, qualidade do sono, passos e calorias em tempo real, com relatórios claros para acompanhar sua evolução.</p>
-        </div>
+        <h3>Rastreamento em tempo real</h3>
+
+        <p>
+            Veja informações como batimentos cardíacos,
+            qualidade do sono, passos e calorias diretamente no aplicativo,
+            com gráficos simples e fáceis de entender.
+        </p>
+
     </div>
 
+    <!-- CARD 3 -->
+    <div class="feature-card">
 
-    <div class="feature-card" onclick="toggleCard(this)">
         <i class="fa-solid fa-share-nodes fa-3x"></i>
-        <h3>Suporte da Comunidade</h3>
-        <p>Conte com a ajuda de outros usuários e dicas do nosso suporte.</p>
+        <!-- Ícone de compartilhamento/comunidade -->
 
-        <div class="conteudo-extra">
-            <p>Participe de uma comunidade ativa, compartilhe experiências e receba orientações para alcançar melhores resultados com o apoio de outros usuários.</p>
-        </div>
+        <h3>Suporte da Comunidade</h3>
+
+        <p>
+            Conte com dicas, experiências e suporte de outros usuários
+            para tornar sua rotina mais saudável e conectada.
+        </p>
+
     </div>
 
 </section>
 
-<!-- IMAGENS -->
+<!-- IMAGEM 1 -->
 <section class="hero">
+
     <img src="https://6eec2e5ab2.cbaul-cdnwnd.com/94d42f6f7de07cdab06a807f836e19d7/200000035-3184031842/Captura%20de%20tela%202026-03-24%20215237.webp?ph=6eec2e5ab2"
          class="hero-img">
+    <!-- Primeira imagem do site -->
+
 </section>
 
+<!-- IMAGEM 2 -->
 <section class="hero">
+
     <img src="https://6eec2e5ab2.cbaul-cdnwnd.com/94d42f6f7de07cdab06a807f836e19d7/200000037-7dc2d7dc2f/Captura%20de%20tela%202026-03-24%20220312.webp?ph=6eec2e5ab2"
          class="hero-img">
+    <!-- Segunda imagem do site -->
+
 </section>
 
-<!-- FLEX -->
+<!-- MÉTRICAS -->
 <section class="secao-flex">
+    <!-- Seção com imagem e texto lado a lado -->
+
     <div class="container">
+
         <div class="flex-box">
+            <!-- Caixa flexível -->
 
             <img class="flex-img"
                  src="https://6eec2e5ab2.cbaul-cdnwnd.com/94d42f6f7de07cdab06a807f836e19d7/200000043-4375443756/24%20de%20mar.%20de%202026%2C%2022_13_30-2.webp?ph=6eec2e5ab2">
+            <!-- Imagem do relógio -->
 
             <div class="flex-texto">
+
                 <h2>Métricas corporais</h2>
+                <!-- Título da seção -->
+
                 <p>
                     Cuide da sua saúde de forma prática com nosso relógio inteligente.
-                    Tenha acesso em tempo real a dados como batimentos cardíacos, sono, passos e calorias, com gráficos simples e fáceis de entender no aplicativo.
-                    Veja sua evolução ao longo dos dias e receba alertas sempre que algo estiver fora do normal, garantindo mais segurança e controle no seu dia a dia.
+                    Tenha acesso em tempo real a dados como batimentos cardíacos,
+                    sono, passos e calorias, com gráficos simples e fáceis de entender no aplicativo.
+                    Veja sua evolução ao longo dos dias e receba alertas sempre que algo estiver fora do normal,
+                    garantindo mais segurança e controle no seu dia a dia.
                 </p>
+                <!-- Texto explicativo -->
+
             </div>
 
         </div>
+
     </div>
+
 </section>
 
-<!-- FOOTER -->
+<!-- RODAPÉ -->
 <footer>
-  <strong>Pulsifer · SyncPulse</strong> — Estilo e segurança em um só produto.<br>
-  © 2025 · ADS 1º Semestre
+
+    <strong>Pulsifer · SyncPulse</strong>
+    <!-- Nome do projeto -->
+
+    — Estilo e segurança em um só produto.
+
+    <br>
+    <!-- Quebra de linha -->
+
+    © 2026 · ADS 1º Semestre
+    <!-- Direitos autorais -->
+
 </footer>
 
-<script>
-    function toggleCard(card) {
-        card.classList.toggle("ativo");
-    }
-</script>
 </body>
+
 </html>

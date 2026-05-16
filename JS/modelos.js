@@ -1,6 +1,6 @@
 // =============================================
 // ARQUIVO JAVASCRIPT PARA MODELOS.JS
-// Fun��o para alternar entre diferentes modelos de dispositivos IoT
+// Função para alternar entre diferentes modelos de dispositivos
 // =============================================// =====================================================
 // PULSIFER · script.js
 // Equipe Logic Gate — ADS 1° Semestre
