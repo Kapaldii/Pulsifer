@@ -1,23 +1,27 @@
 /* =============================================
-   ARQUIVO CSS PARA A P�GINA INDEX.HTML
+   ARQUIVO CSS PARA A PAGINA INDEX.HTML
    Estilos para a landing page da Pulsifer com hero, features e footer
-============================================= *//* RESET */
+============================================= */
+
+/* Zerar a margem e o padding de toda pagina e definir a fonte inportada*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+
+/* Transição suave entre páginas*/
+
 }
 html {
     scroll-behavior: smooth;
 }
+
+
+
 body {
-    background-image: url('../Assets/fundo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     color: #333;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Ocultar o que ultrapassar a largura total */
 }
 
 .container {
@@ -29,57 +33,59 @@ body {
 /* NAV */
 nav {
     background: #ffffff;
-    border-bottom: 2px solid #3a7eff;
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    border-bottom: 2px solid #3a7eff; /* define a borda inferior azul */
+    padding: 1rem 2rem; /* define padding de 1x e 2x o tamanho da fone padrão*/
+    display: flex; /* Mostra os elementos na mesma linha */
+    align-items: center; /* alinhar no centro */
+    justify-content: space-between; /* efine um espaço entre o conteudo */
 }
 
-.logo { font-size: 1.4rem; font-weight: bold; color: #1a4bbd;}
-.logo a {text-decoration: none;}
+.logo { font-size: 1.4rem; font-weight: bold; color: #1a4bbd;} /* Tamanho, peso e cor da fonte*/
+.logo a {text-decoration: none;} /* Remove a aparencia de link da tag a */
 .logo span { color: #3a7eff; }
 
-nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav ul { list-style: none; display: flex; gap: 1.5rem; } /* Remove os icones de lista, deixa na mesma linha e define espaçamento.*/
 nav ul li { font-size: .9rem; }
 nav ul li a {
     color: #0a1f5c;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease; /* Cria um tempo de transiçaõ para o hover */
 }
 nav ul li a:hover { color: #3a7eff; }
 
 /* HERO */
 .hero-principal {
     position: relative;
-    min-height: 520px;
-    padding: 80px 0;
+    min-height: 520px; /* Altura mminima */
+    padding: 80px 0; 
     background-image: linear-gradient(180deg, rgba(4,83,137,0.72) 0%, rgba(4,83,137,0.58) 60%, rgba(4,83,137,0.18) 100%),
-      url('../Assets/img1.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
+      url('../Assets/img1.jpg'); /* Cria um degrade com a imagem ao fundo  */
+    background-size: cover; /* Tamanho da imagem de fundo */
+    background-position: center; /* Posição do fundo */
+    display: flex; 
     align-items: center;
 }
 
 .hero-principal::after {
     content: "";
     position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.18) 40%, rgba(0,0,0,0.4) 100%);
+    inset: 0; /* Faz a camada flutuar e se esticar em cima do elemento */
+    background: linear-gradient(180deg, rgba(0,0,0,0.22) 
+    0%, rgba(0,0,0,0.18) 40%, 
+    rgba(0,0,0,0.4) 100%); /* Degradê no after */
 }
 
 .hero-principal .hero-content {
     position: relative;
-    z-index: 1;
-    max-width: 650px;
+    z-index: 1; /* Para o elemento aparecer na frente */
+    max-width: 650px; /* largura maxima */
     color: #fff;
-    text-align: left;
+    text-align: left; 
 }
 
 .hero-badge {
-    display: inline-block;
+    display: inline-block; /* Elemento em linha, respeitando a largura definida */
     margin-bottom: 18px;
     padding: 0.55rem 1rem;
     border-radius: 999px;
@@ -87,12 +93,12 @@ nav ul li a:hover { color: #3a7eff; }
     color: #e5f2ff;
     font-size: 0.82rem;
     letter-spacing: 0.14em;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Transforma o texto todo em maiuscula */
 }
 
 .hero-principal h1 {
-    font-size: clamp(2.8rem, 4vw, 4.4rem);
-    line-height: 1.05;
+    font-size: clamp(2.8rem, 4vw, 4.4rem); /* Tamanho da fonte dinamico */
+    line-height: 1.05; /* Altura da linha*/
     margin-bottom: 18px;
 }
 
@@ -105,19 +111,19 @@ nav ul li a:hover { color: #3a7eff; }
 }
 
 .hero-button {
-    display: inline-block;
+    display: inline-block; /* Em linha, respeitando a largura */
     background: #ffd800;
     color: #0a1f5c;
     padding: 14px 28px;
     border-radius: 999px;
     text-decoration: none;
     font-weight: 700;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Configura a transição */
 }
 
 .hero-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+    transform: translateY(-2px); /* Adiciona uma transformação geometrica de 2px no eixo Y do elemento */
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18); /* Aumenta a sombra e define a cor */
 }
 
 .hero-img {
@@ -131,7 +137,7 @@ nav ul li a:hover { color: #3a7eff; }
 .features {
     display: flex;
     justify-content: center; /* centraliza os cards */
-    gap: 35px;
+    gap: 35px; /* Espaçamento */
     margin: 50px auto;
 }
 
@@ -158,6 +164,12 @@ nav ul li a:hover { color: #3a7eff; }
 .feature-card i {
     color: #045389;
     margin-bottom: 15px;
+}
+
+.emoji-icon {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    display: block;
 }
 
 /* FLEX */
@@ -237,6 +249,3 @@ footer strong { color: #fff; }
     margin-top: 10px;
 }
 
-.feature-card.ativo .conteudo-extra {
-    display: block;
-}
