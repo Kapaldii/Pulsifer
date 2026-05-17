@@ -238,7 +238,8 @@ footer strong { color: #fff; }
     .featuresconteiner{display: inline-block;
     flex-direction: column;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    max-width: auto;}
 
     .flex-img,
     .flex-texto {
@@ -247,6 +248,7 @@ footer strong { color: #fff; }
 
     .feature-card {
         display: inline-block;
+        max-width: auto;
     }
 }
 
