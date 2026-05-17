@@ -1,14 +1,7 @@
 /* =============================================
-   ARQUIVO CSS PARA A P�GINA EQUIPE.HTML
-   Este arquivo cont�m todos os estilos para a p�gina "Quem Somos"
-   da Pulsifer, incluindo navega��o, hero, se��es sobre, equipe e footer.
+   ARQUIVO CSS PARA A PÁGINA EQUIPE.HTML.
 ============================================= */
 
-/* =============================================
-   RESET - Zera margens e paddings padr�o do navegador
-============================================= *//* =============================================
-   RESET
-============================================= */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -58,19 +51,37 @@ nav ul li a:hover { color: #3a7eff; }
 /* =============================================
    SOBRE
 ============================================= */
-.sobre { padding: 2rem; max-width: 800px; margin: 0 auto; text-align: justify; }
-.sobre h2 { font-size: 1.5rem; color: #1a4bbd; margin-bottom: 1.5rem; text-align: center; }
-.sobre p { margin-bottom: 1rem; line-height: 1.6; color: #4a6090; }
+.sobre { padding: 2rem; 
+max-width: 800px; 
+margin: 0 auto; text-align: justify; }
+
+.sobre h2 { font-size: 1.5rem; 
+color: #1a4bbd; 
+margin-bottom: 1.5rem; 
+text-align: center; }
+
+.sobre p { margin-bottom: 1rem; 
+  line-height: 1.6; 
+  color: #4a6090;
+ }
 
 /* =============================================
    EQUIPE
 ============================================= */
 .equipe { padding: 2rem; max-width: 900px; margin: 0 auto; }
-.equipe h2 { font-size: 1.3rem; margin-bottom: 1.2rem; color: #1a4bbd; }
+
+.equipe h2 {font-size: 1.3rem; 
+  margin-bottom: 1.2rem; 
+  color: #1a4bbd; 
+}
 
 .grid {
-  display: grid;
+  display: grid; /* Cria um Display em colunas e linhas automatico */
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* Configura a coluna, repeat define como ela ira se repetir */
+  /* Configura a coluna, Autofit para as colunas prencher todo 
+  espaço diponivel*/
+   /* Configura a coluna, minmax define o minimo de largura e 1fr(1 fração)*/
   gap: 1rem;
 }
 
@@ -149,6 +160,7 @@ footer strong { color: #fff; }
         flex-direction: column;
         gap: 10px;
     }
+
 
     .flex-box {
         flex-direction: column;
