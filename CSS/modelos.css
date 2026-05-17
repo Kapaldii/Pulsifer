@@ -1,6 +1,6 @@
 /* =============================================
-   ARQUIVO CSS PARA A PÁGINA MODELOS.HTML
-   Estilos para a exibição dos modelos de dispositivos IoT com animações
+   ARQUIVO CSS PARA A Pï¿½GINA MODELOS.HTML
+   Estilos para a exibiï¿½ï¿½o dos modelos de dispositivos IoT com animaï¿½ï¿½es
 ============================================= *//* =============================================
    RESET
 ============================================= */
@@ -68,6 +68,7 @@ nav ul li a:hover { color: #3a7eff; }
   display: flex;
   justify-content: center;
   gap: 12px;
+  margin-top: 56px;
   margin-bottom: 56px;
   flex-wrap: wrap;
   padding: 0 20px;

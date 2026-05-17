@@ -1,98 +1,254 @@
-<!-- P�gina de modelos da Pulsifer - Exibe diferentes dispositivos IoT com troca interativa --><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore os modelos Pulsifer e escolha o dispositivo ideal para seu estilo de vida.">
-  <meta property="og:title" content="Pulsifer · Modelos" />
-  <meta property="og:description" content="Explore os modelos Pulsifer e escolha o dispositivo ideal para seu estilo de vida." />
-  <meta property="og:image" content="https://kapaldii.github.io/Pulsifer/Assets/Pulsifer-share.jpeg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://example.com/modelos.html" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Pulsifer · Modelos" />
-  <meta name="twitter:description" content="Explore os modelos Pulsifer e escolha o dispositivo ideal para seu estilo de vida." />
-  <meta name="twitter:image" content="https://kapaldii.github.io/Pulsifer/Assets/Pulsifer-share.jpeg" />
-  <!-- Substitua Assets/placeholder-share-image.jpg pela imagem de compartilhamento posterior -->
-  <title>Pulsifer · Modelos</title>
-  <link rel="icon" href="Assets/favicon.svg" type="image/svg+xml">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/modelos.css" />
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pulsifer · Modelos</title>
+
+    <!-- ÍCONE -->
+    <link rel="icon"
+          href="Assets/pulsifer.ico"
+          type="image/svg+xml">
+
+    <!-- FONTE -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS HEADER -->
+    <link rel="stylesheet"
+          href="CSS/index.css">
+
+    <!-- CSS MODELOS -->
+    <link rel="stylesheet"
+          href="CSS/modelos.css">
+
 </head>
+
 <body>
 
-  <!-- CABEÇALHO -->
-  <nav>
-    <div class="logo"><a href="index.html">Pulsi<span>fer</span></a></div>
+<!-- MENU SUPERIOR -->
+<nav>
+
+    <div class="logo">
+
+        <a href="index.html">
+            Pulsi<span>fer</span>
+        </a>
+
+    </div>
+
     <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="modelos.html">Modelos</a></li>
-      <li><a href="contato.html">Contato</a></li>
-      <li><a href="equipe.html">Quem Somos</a></li>
+
+        <li><a href="index.html">Início</a></li>
+
+        <li><a href="modelos.html">Modelos</a></li>
+
+        <li><a href="contato.html">Contato</a></li>
+
+        <li><a href="equipe.html">Quem Somos</a></li>
+
     </ul>
-  </nav>
 
-  <!-- TÍTULO -->
-  <div class="secao-titulo">
-    <h2>Escolha o seu modelo</h2>
-    <p>Tecnologia de monitoramento feita para cada fase da vida</p>
-  </div>
+</nav>
 
-  <!-- BOTÕES FIXOS NO HTML -->
-  <div class="botoes">
-    <button id="btn-one"  onclick="trocarModelo('one')"  class="ativo" style="background:#555555;">Pulsifer One</button>
-    <button id="btn-plus" onclick="trocarModelo('plus')">Pulsifer Plus</button>
-    <button id="btn-kids" onclick="trocarModelo('kids')">Pulsifer Kids</button>
-  </div>
+<!-- BOTÕES DOS MODELOS -->
+<div class="botoes">
 
-  <!-- ÁREA DO MODELO -->
-  <div class="modelo-area">
+    <button onclick="trocarModelo('women')">
+        Mulheres
+    </button>
 
-    <!-- Visual SVG da pulseira -->
-    <div class="modelo-visual" id="modeloVisual">
-      <!-- SVG trocado via JS -->
+    <button onclick="trocarModelo('idoso')">
+        Idosos
+    </button>
+
+    <button onclick="trocarModelo('kids')">
+        Crianças
+    </button>
+
+</div>
+
+<!-- ÁREA DO MODELO -->
+<div class="modelo-area">
+
+    <!-- IMAGEM -->
+    <div class="modelo-visual">
+
+        <img src="Assets/mulheres.png"
+             alt="Relógio modelo para mulheres"
+             style="
+                width: 320px;
+                max-width: 100%;
+                border-radius: 20px;
+                margin-right: 40px;
+             ">
+
     </div>
 
-    <!-- Informações -->
+    <!-- INFORMAÇÕES -->
     <div class="modelo-info">
-      <div class="modelo-tag"     id="modeloTag">Para Idosos</div>
-      <div class="modelo-nome"    id="modeloNome">Pulsifer One</div>
-      <div class="separador"></div>
-      <p class="modelo-descricao" id="modeloDescricao">
-        Segurança e tranquilidade para quem você ama. Monitoramento contínuo com alertas instantâneos para familiares.
-      </p>
 
-      <div class="funcionalidades">
-        <div class="func-item">
-          <span class="func-icone" id="icone1">🆘</span>
-          <div class="func-texto">
-            <strong id="titulo1">Botão SOS</strong>
-            <span   id="desc1">Acionamento de emergência com um toque</span>
-          </div>
+        <div class="modelo-tag">
+            Para Mulheres
         </div>
-        <div class="func-item">
-          <span class="func-icone" id="icone2">❤️</span>
-          <div class="func-texto">
-            <strong id="titulo2">Monitor Cardíaco</strong>
-            <span   id="desc2">Frequência cardíaca medida em tempo real</span>
-          </div>
+
+        <div class="modelo-nome">
+            Pulsifer Women
         </div>
-        <div class="func-item">
-          <span class="func-icone" id="icone3">🌡️</span>
-          <div class="func-texto">
-            <strong id="titulo3">Temperatura Corporal</strong>
-            <span   id="desc3">Detecta febre e variações térmicas</span>
-          </div>
+
+        <div class="separador"></div>
+
+        <p class="modelo-descricao">
+
+            Elegância, tecnologia e praticidade no seu dia a dia.
+            O Pulsifer Women acompanha sua rotina com monitoramento
+            inteligente de saúde, notificações em tempo real
+            e um design moderno pensado para oferecer conforto e segurança.
+
+        </p>
+
+        <!-- FUNCIONALIDADES -->
+        <div class="funcionalidades">
+
+            <!-- ITEM 1 -->
+            <div class="func-item">
+
+                <span class="func-icone">❤️</span>
+
+                <div class="func-texto">
+
+                    <strong>
+                        Monitor Cardíaco
+                    </strong>
+
+                    <span>
+                        Acompanhe seus batimentos em tempo real
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="func-item">
+
+                <span class="func-icone">😴</span>
+
+                <div class="func-texto">
+
+                    <strong>
+                        Qualidade do Sono
+                    </strong>
+
+                    <span>
+                        Veja informações sobre suas noites de descanso
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="func-item">
+
+                <span class="func-icone">📱</span>
+
+                <div class="func-texto">
+
+                    <strong>
+                        Notificações Inteligentes
+                    </strong>
+
+                    <span>
+                        Receba mensagens e alertas diretamente no relógio
+                    </span>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
+
     </div>
 
-  </div><!-- /modelo-area -->
-  <footer>
-    <strong>Pulsifer · SyncPulse</strong> — Estilo e segurança em um só produto.<br>
-    © 2025 · ADS 1º Semestre
-  </footer>
+</div>
 
-  <script src="JS/modelos.js"></script>
+<!-- FOOTER -->
+<footer>
+
+    <strong>
+        Pulsifer · SyncPulse
+    </strong>
+
+    — Estilo e segurança em um só produto.
+
+    <br>
+
+    © 2025 · ADS 1º Semestre
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+
+    function trocarModelo(tipo) {
+
+        const imagem = document.querySelector(".modelo-visual img");
+
+        const tag = document.querySelector(".modelo-tag");
+
+        const nome = document.querySelector(".modelo-nome");
+
+        const descricao = document.querySelector(".modelo-descricao");
+
+        if (tipo === "women") {
+
+            imagem.src = "Assets/mulheres.png";
+
+            tag.innerText = "Para Mulheres";
+
+            nome.innerText = "Pulsifer Women";
+
+            descricao.innerText =
+                "Elegância, tecnologia e praticidade no seu dia a dia. O Pulsifer Women acompanha sua rotina com monitoramento inteligente de saúde e notificações em tempo real.";
+
+        }
+
+        if (tipo === "idoso") {
+
+            imagem.src = "Assets/idoso.png";
+
+            tag.innerText = "Para Idosos";
+
+            nome.innerText = "Pulsifer One";
+
+            descricao.innerText =
+                "Segurança e tranquilidade para quem você ama. Monitoramento contínuo com alertas instantâneos para familiares.";
+
+        }
+
+        if (tipo === "kids") {
+
+            imagem.src = "Assets/kids.png";
+
+            tag.innerText = "Para Crianças";
+
+            nome.innerText = "Pulsifer Kids";
+
+            descricao.innerText =
+                "Segurança e diversão para os pequenos. Comunicação rápida e localização em tempo real para maior tranquilidade.";
+
+        }
+
+    }
+
+</script>
+
 </body>
+
 </html>
