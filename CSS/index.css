@@ -216,30 +216,35 @@ footer strong { color: #fff; }
     nav {
         flex-direction: column;
         gap: 10px;
+        align-items: flex-start;
     }
 
     .hero-principal {
         min-height: auto;
-        padding: 60px 0;
-        width: 1200px;
+        padding: 60px 1rem;
+        width: 100%;
     }
 
     .hero-principal .hero-content {
-        display: inline;
-        max-width: 1200px;
-        padding: 0 1rem;
+        display: block;
+        max-width: 100%;
+        padding: 0;
     }
 
     .flex-box {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
     }
 
-    .featuresconteiner{display: inline-block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: auto;}
+    .features.container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 
     .flex-img,
     .flex-texto {
@@ -247,8 +252,10 @@ footer strong { color: #fff; }
     }
 
     .feature-card {
-        display: inline-block;
-        max-width: auto;
+        display: block;
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
     }
 }
 
