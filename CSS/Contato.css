@@ -21,7 +21,10 @@
 nav {
     background: #ffffff;
     border-bottom: 2px solid #3a7eff;
-    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Container-nav cuida de todo o layout interno */
@@ -29,14 +32,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
     width: 100%;
-  background: #ffffff;
-  border-bottom: 2px solid #3a7eff;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
