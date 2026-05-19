@@ -1,88 +1,83 @@
-<!-- Pagina de contato da Pulsifer - Formulario com busca autom�tica de CEP -->  <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Entre em contato com a Pulsifer para saber mais sobre nossos dispositivos de monitoramento.">
-  <meta property="og:title" content="Pulsifer · Contato" />
-  <meta property="og:description" content="Entre em contato com a Pulsifer para saber mais sobre nossos dispositivos de monitoramento." />
-  <meta property="og:image" content="https://kapaldii.github.io/Pulsifer/Assets/Pulsifer-share.jpeg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://example.com/Contato.html" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Pulsifer · Contato" />
-  <meta name="twitter:description" content="Entre em contato com a Pulsifer para saber mais sobre nossos dispositivos de monitoramento." />
-  <meta name="twitter:image" content="https://kapaldii.github.io/Pulsifer/Assets/Pulsifer-share.jpeg" />
-  <!-- Substitua Assets/placeholder-share-image.jpg pela imagem de compartilhamento posterior -->
   <title>Pulsifer · Contato</title>
-   
-  <link rel="icon"
-          href="Assets/pulsifer.ico"
-          type="image/svg+xml">
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="CSS/Contato.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/contato.css" />
 </head>
 
 <body>
 
-  <!-- CABEÇALHO -->
+  <!-- CABEÇALHO / MENU -->
   <nav>
-  <div class="container-nav">
-    <div class="logo">
-      <a href="index.html">Pulsi<span>fer</span></a>
-    </div>
+    <div class="logo"><a href="index.html">Pulsi<span>fer</span></a></div>
+
     <ul>
       <li><a href="index.html">Início</a></li>
       <li><a href="modelos.html">Modelos</a></li>
       <li><a href="contato.html">Contato</a></li>
       <li><a href="equipe.html">Quem Somos</a></li>
     </ul>
-  </div>
-</nav>
+  </nav>
 
-  <main class="form-section">
+
+
+
+    <main class="form-section">
 
   <h1>Fale com a gente</h1>
   <p class="subtitulo">Preencha o formulário e entraremos em contato</p>
 
 
-  <div class="form-card">
-    <form>
+<div class="form-card">
+   <form method="post">
 
-  <div class="campo">
-    <label>Nome</label>
-    <input type="text" placeholder="Seu nome" required>
-  </div>
+    <div class="campo">
+     <label>Nome</label>
+      <input type="text" placeholder="Seu nome" required>
+    </div>
 
-  <div class="campo">
-    <label>Email</label>
-    <input type="email" placeholder="Seu email" required>
-  </div>
+    <div class="campo">
+     <label>Email</label>
+      <input type="email" placeholder="Seu email" required>
+    </div>
 
-  <div class="campo">
-    <label>Telefone</label>
-    <input type="tel" placeholder="(11) 99999-9999">
-  </div>
+    <div class="campo">
+     <label>Telefone</label>
+      <input type="tel" id="telefone" placeholder="+55 (11) 99999-9999">
+    </div>
 
   <!-- CEP -->
-  <div class="campo">
-    <label>CEP</label>
-    <input type="text" id="cep" placeholder="Digite o CEP">
-  </div>
+    <div class="campo">
+     <label>CEP</label>
+      <input type="text" id="cep" maxlength="9" inputmode="numeric" placeholder="Digite o CEP">
+    </div>
 
   <!-- Endereço -->
-  <div class="campo">
-    <label>Rua</label>
-    <input type="text" id="rua">
-  </div>
+    <div class="campo">
+     <label>Rua</label>
+      <input type="text" id="rua">
+    </div>
 
-      <!-- Númeero -->
+      <!-- Númeero
   <div class="campo">
     <label>Número</label>
     <input type="text" id="numero">
-  </div>
+  </div> -->
 
+   <div class="linha-dupla">
+    <div class="campo">
+     <label for="numero">Número</label>
+      <input type="number" id="numero" min="0" placeholder="Número">
+    </div>
+
+    <div class="campo">
+     <label>Complemento</label>
+      <input type="text" placeholder="Apto, bloco, etc">
+    </div>
+  </div>
 
   <div class="campo">
     <label>Bairro</label>
@@ -103,18 +98,13 @@
     <label>Mensagem</label>
     <textarea rows="4" placeholder="Digite sua mensagem"></textarea>
   </div>
+ </div>
 
   <button type="submit">Enviar mensagem</button>
 
-    </form>
-  </div>
+</form>
  
 </main>
-
-<footer>
-  <strong>Pulsifer · SyncPulse</strong> — Estilo e segurança em um só produto.<br>
-  © 2025 · ADS 1º Semestre
-</footer>
 
 <script src="JS/contato.js"></script>
 </body>
