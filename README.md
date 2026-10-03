@@ -1,36 +1,58 @@
-# 🛡️ Projeto Pulsifer 
+# Pulsifer 🛡️
 
-Bem-vindo ao repositório oficial do projeto **Pulsifer**, desenvolvido pela squad **Logic Gate**. 
+Projeto acadêmico desenvolvido no 1º semestre de Análise e Desenvolvimento de Sistemas (ADS) da UNINOVE.
 
-Este projeto é um Sistema Integrado de IoT e Web focado em segurança e monitoramento de saúde, construído como requisito acadêmico para o 1º semestre do curso de Análise e Desenvolvimento de Sistemas (ADS) da Universidade 9 de Julho.
+O Pulsifer é um protótipo de wearable voltado ao monitoramento de saúde e à utilização de um recurso de emergência. O projeto combina uma simulação de dispositivo IoT com uma aplicação web de apresentação.
 
-## 🎯 O que é o Pulsifer?
-O Pulsifer é o produto de uma empresa fictícia de soluções tecnológicas focada na proteção feminina e monitoramento de saude. Consiste em um dispositivo *wearable* (relógio/pulseira inteligente) discreto e eficiente, equipado com:
-* **Monitoramento de Saúde:** Sensores de batimentos cardíacos em tempo real.
-* **Segurança Integrada:** Botão de pânico (SOS) discreto para envio de alertas imediatos.
-* **Geolocalização (GPS):** Rastreamento preciso integrado com a rede de apoio da usuária.
+## 💡 Funcionalidades
 
-Os dados coletados pelo dispositivo são enviados via API para um Dashboard Web responsivo e intuitivo.
+Na simulação do dispositivo:
 
-## 📚 Disciplinas Integradas
-Este projeto multidisciplinar aplica conceitos práticos das seguintes áreas:
-- **Desenvolvimento Web & Front-end:** Criação da interface do usuário (Site/Dashboard).
-- **Internet das Coisas (IoT):** Simulação dos sensores e lógica do dispositivo.
-- **Arquitetura de Computadores:** Definição do hardware, processamento e consumo de energia do wearable.
+- Monitoramento de batimentos cardíacos;
+- Monitoramento de temperatura corporal;
+- Botão SOS acionado por pressionamento prolongado;
+- Geração de mensagem de emergência;
+- Utilização de latitude e longitude;
+- Geração de link de localização no Google Maps.
 
-## 👥 Estrutura da Squad (Logic Gate)
-Nosso time é composto por 13 desenvolvedores e pesquisadores, divididos em 4 frentes de atuação para otimizar o fluxo de trabalho até nossa entrega final em **22 de maio de 2026**:
+O projeto também possui uma interface web para apresentação do produto, seus modelos, equipe e informações de contato.
 
-1. **🌐 Web & Front-end:** Estruturação em HTML/CSS e integração de API.
-2. **🕹️ IoT & Simulação:** Lógica de sensores e comunicação de dados.
-3. **🎬 Produção Audiovisual:** Roteiro, gravação e edição do Pitch de 5 minutos.
-4. **📄 Documentação Técnica:** Relatório ABNT e pesquisa de Arquitetura de Computadores.
+## 🛠️ Tecnologias utilizadas
 
-## 🛠️ Tecnologias e Ferramentas (Em Definição)
-* **Front-end:** HTML5, CSS3, (Bootstrap em avaliação).
-* **Simulação IoT:** Wokwi / C++.
-* **Controle de Versão:** Git e GitHub.
-* **Design e Prototipagem:** Canva / Figma.
+### IoT
+- C++
+- Wokwi
 
----
-*Projeto em desenvolvimento ativo. Criado com dedicação pela equipe Logic Gate.*
+### Web
+- HTML5
+- CSS3
+- JavaScript
+- Flexbox
+
+### Versionamento
+- Git
+- GitHub
+
+## 👨‍💻 Minha participação
+
+Além de participar da organização das atividades da equipe, atuei principalmente no desenvolvimento da parte IoT do projeto.
+
+Minhas principais contribuições foram:
+
+- Desenvolvimento da lógica do dispositivo em C++;
+- Implementação e integração dos sensores simulados;
+- Implementação da funcionalidade SOS;
+- Integração da localização à mensagem de emergência;
+- Desenvolvimento e correção de componentes da aplicação web;
+- Integração e correção de partes desenvolvidas pela equipe;
+- Participação na produção e edição do vídeo de demonstração.
+
+## 🎓 Contexto acadêmico
+
+O projeto foi desenvolvido pela equipe Logic Gate como trabalho multidisciplinar do curso de Análise e Desenvolvimento de Sistemas da UNINOVE.
+
+Foram aplicados conhecimentos relacionados a desenvolvimento web, Internet das Coisas, programação e arquitetura de computadores.
+
+## 🌐 Demonstração
+
+A página web do projeto está disponível por meio do GitHub Pages.
