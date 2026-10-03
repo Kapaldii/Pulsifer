@@ -56,3 +56,7 @@ Foram aplicados conhecimentos relacionados a desenvolvimento web, Internet das C
 ## 🌐 Demonstração
 
 A página web do projeto está disponível por meio do GitHub Pages.
+
+##Projeto no Wokwi:
+
+https://wokwi.com/projects/459229336200318977
